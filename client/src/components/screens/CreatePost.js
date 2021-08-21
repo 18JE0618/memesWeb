@@ -39,8 +39,8 @@ const CreatePost = () => {
     const postDetails = () => {
         const data = new FormData()
         data.append("file", image)
-        data.append("upload_preset", "new-insta")
-        data.append("cloud_name", "cnq")
+        data.append("upload_preset", "Umemer")
+        data.append("cloud_name", "prash7pwoa9")
         fetch("https://api.cloudinary.com/v1_1/prash7pwoa9/image/upload", {
             method: "post",
             body: data
@@ -79,7 +79,7 @@ const CreatePost = () => {
                 onChange={(e) => setBody(e.target.value)}
             />
             <div className="file-field input-field">
-                <div className="btn #64b5f6 blue darken-1">
+                <div className="btn ">
                     <span>Uplaod Image</span>
                     <input type="file" onChange={(e) => setImage(e.target.files[0])} />
                 </div>
@@ -87,7 +87,7 @@ const CreatePost = () => {
                     <input className="file-path validate" type="text" />
                 </div>
             </div>
-            <button className="btn waves-effect waves-light #64b5f6 blue darken-1"
+            <button className="btn waves-effect waves-light "
                 onClick={() => postDetails()}
 
             >
