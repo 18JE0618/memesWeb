@@ -7,7 +7,7 @@ const PORT = 5000;
 
 mongoose.connect(MONGOURI, { useNewUrlParser: true, useUnifiedTopology: true });
 mongoose.connection.on('connected', () => {
-    console.log("yeah baby its connected");
+    console.log("its connected");
 });
 mongoose.connection.on('error', (err) => { console.log("there is some error", err) });
 
